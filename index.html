@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX SHADOW GENERATOR</title>
+    <link rel="icon" type="image/png" href="asset/img/logo.png">
+    <link rel="stylesheet" href="asset/css/jquery-ui.css">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/font awesome/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="downbar">
+        <a href="#" class="logo">BOX SHADOW GENERATOR</a>
+        <div class="p-4">
+
+            <div class="color-back-flex d-flex">
+                <div class="div-inputs">
+                    <label class="heading-text" for="shadowcolor">Shadow Color :</label>
+                    <input type="text" id="shadowcolor" value="#000000">
+                    <input class="color-boxx" type="color" onchange="shadowcolor_alert()" id="scolor">
+                </div>
+
+                <div class="div-inputs ms-5">
+                    <label class="heading-text" for="backgroundcolor">Background Color :</label>
+                    <input type="text" id="backgroundcolor" value="#000000">
+                    <input class="color-boxx" type="color" onchange="boxcolor_alert()" id="bcolor">
+                </div>
+
+                <div class="div-inputs ms-5">
+                    <label class="heading-text me-3" class="form-check-label" for="inset2">Inset :</label>
+                    <div class="form-check form-switch" style="padding-left:2.1rem">
+                        <input class="form-check-input" type="checkbox" name="inset" id="inset" onclick="applyinset()">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-bar-flex d-flex">
+                <div class="div-inputs">
+                    <p>
+                        <label class="heading-text" for="hslider_amount">Horizontal Length :</label>
+                        <input id="hslider_amount" value="10" readonly>
+                    </p>
+                    <div id="hslider-range-min"></div>
+                </div>
+
+                <div class="div-inputs">
+                    <p>
+                        <label class="heading-text" for="vslider_amount">Vertical Length :</label>
+                        <input type="text" id="vslider_amount" value="10" readonly
+                            style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div id="vslider-range-min"></div>
+                </div>
+
+                <div class="div-inputs">
+                    <p>
+                        <label class="heading-text" for="bslider_amount">Blur Radius :</label>
+                        <input type="text" id="bslider_amount" value="10" readonly
+                            style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div id="bslider-range-min"></div>
+                </div>
+
+                <div class="div-inputs">
+                    <p>
+                        <label class="heading-text" for="sslider_amount">Spread Radius :</label>
+                        <input type="text" id="sslider_amount" value="-5" readonly
+                            style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div id="sslider-range-min"></div>
+                </div>
+
+                <div class="div-inputs">
+                    <p>
+                        <label class="heading-text" for="oslider_amount">Opacity :</label>
+                        <input type="text" id="oslider_amount" value="0.5" readonly
+                            style="border:0; color:#f6931f; font-weight:bold;">
+                    </p>
+                    <div id="oslider-range-min"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="page-content">
+        <div class="container-fluid content">
+            <h2>BOX SHADOW</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="main-content" class="p-4 p-md-5 pt-5">
+                        <div class="box_shadow_output" id="box_shadow_output">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="btn-block" style="margin-top:120px;">
+                        <span id="code_copied" class="text-center"></span>
+                        <button type="button" style="background:#2a725b" onclick="copyStyle()">Copy Code</button>
+
+                        <span id="boxs_code"> box-shadow: rgba(0,0,0,0.5) 10px 10px 10px -5px; <br>
+                            -webkit-box-shadow: rgba(0,0,0,0.5) 10px 10px 10px -5px;<br>
+                            -moz-box-shadow: rgba(0,0,0,0.5) 10px 10px 10px -5px; </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="float-right">
+            <strong>Copyright &copy; 2023. All rights reserved.</strong>
+            <a href="http://priyanshupaliwal.42web.io/" target="_blank"><b>Priyanshu Paliwal</b></a>
+        </div>
+
+    </footer>
+
+
+
+    <!-- js -->
+    <script src="asset/js/jquery.js"></script>
+    <script src="asset/js/jquery-ui.js"></script>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

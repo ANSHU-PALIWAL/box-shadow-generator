@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #ebebeb;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+/* side-bar div */
+.downbar {
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(109.6deg, rgba(61, 131, 97, 1) 11.2%, rgba(28, 103, 88, 1) 91.1%);
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .8s ease;
+}
+
+/* side-bar div */
+
+
+
+/* For Navbar logo*/
+.logo {
+    display: block;
+    text-align: center;
+    letter-spacing: .3px;
+    padding: 20px 0px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* For Navbar logo*
+
+
+
+/* page-content */
+.page-content {
+    position: relative;
+    width: 100%;
+    padding: 30px 30px;
+}
+
+.content {
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    color: transparent;
+    -webkit-text-stroke: 1px #1d6858;
+    text-align: center;
+}
+
+/* page-content */
+
+
+
+#hslider_amount,
+#vslider_amount,
+#bslider_amount,
+#sslider_amount,
+#oslider_amount {
+    display: none;
+}
+
+.box_shadow_output {
+    max-width: 300px;
+    min-height: 300px;
+    padding: 10px 0;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 0px #ccc;
+    box-shadow: rgba(0, 0, 0, 0.5) 6px 10px 10px -5px;
+    background: #fff;
+    margin-top: 40px;
+}
+
+input[type=radio]:checked+label:after {
+    opacity: 1;
+}
+
+input[type=text],
+input[type=password] {
+    width: calc(100% - 57px);
+    height: 35px;
+    margin: 13px 0 0 -5px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, .09);
+    background: #ffffff9c;
+}
+
+.color-boxx {
+    position: absolute;
+    top: 60%;
+    right: 0px;
+}
+
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.heading-text {
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #fff;
+    font-size: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    background: #1c87c9;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    display: inline-block;
+}
+
+button:hover {
+    background: #26a9e0;
+}
+
+.div-inputs {
+    display: block;
+    width: 30%;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+/* it is for round the slide-bar */
+.ui-slider-horizontal .ui-slider-handle {
+    top: -0.35em;
+    margin-left: -0.6em;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default,
+.ui-button,
+html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: 0px solid #c5c5c5;
+    background: #f6f6f6;
+    font-weight: normal;
+    color: #454545;
+    border-radius: 50%;
+    opacity: 1 !important;
+}
+
+.ui-widget.ui-widget-content {
+    border: 0px solid #c5c5c5;
+    background: rgb(255 255 255 / 16%) !important;
+    width: 90%;
+}
+
+.ui-slider-horizontal {
+    height: 7px;
+    border-radius: 5px !important;
+}
+
+/* it is for round the slide-bar */
+
+
+
+/* it is for copying code */
+#boxs_code {
+    background-image: linear-gradient(178deg, rgb(61 131 97 / 50%) 11.2%, rgb(28 103 88 / 50%) 91.1%);
+    padding: 10px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    color: #000000;
+}
+
+/* it is for copying code */
+
+
+
+/* inset button */
+.form-switch .form-check-input {
+    width: 4em;
+    height: 1.7rem;
+    background-color: transparent;
+    outline: none;
+    border: 1px dashed #fff;
+    margin-top: 15px;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    text-align: right;
+    margin-left: 37px;
+    padding-top: 12px;
+}
+
+.form-check-input:checked {
+    background-color: transparent;
+    outline: none;
+}
+
+.form-check-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* inset button */
+
+@media screen and (max-width:960px) {
+    #boxs_code {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .heading-text {
+        -webkit-text-stroke: 0.3px #fff;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:914px) {
+    #boxs_code {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .heading-text {
+        -webkit-text-stroke: 0.3px #fff;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .d-flex {
+        display: block !important;
+    }
+
+    .div-inputs {
+        width: 100%;
+    }
+
+    .ms-5 {
+        margin-left: 0rem !important;
+    }
+
+    .heading-text {
+        -webkit-text-stroke: 0.5px #fff;
+        font-size: 20px;
+    }
+}
+
+/*footer css */
+
+.main-footer {
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    border-top: 1px solid #2a725b;
+    color: #2a725b;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.float-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.float-right a {
+    text-decoration: underline;
+    color: #2a725b;
+}
+
+/*footer css */
